@@ -1,0 +1,270 @@
+ html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+ body {
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+ }
+
+  h1 {
+    font-family: "Rubik Glitch", system-ui;
+    font-weight: 500;
+    font-size: 4rem;
+  }
+
+  .header {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+
+  .header img {
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    filter: blur(2px);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .header-text {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+    padding: 0 1rem;
+    font-family: "Rubik Glitch", system-ui;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+  }
+
+  ul {
+    display: flex;
+    position: absolute;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 1.5rem;
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+  }
+
+  li a:hover {
+    color: rgb(255, 0, 0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .bio-words {
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width:40%;
+  }
+
+  .bio-header h2 {
+    font-family: "lacquer", sans-serif;
+    font-size: 3.75rem;
+    color: rgb(255, 2, 2);
+    margin-left: 4rem;
+  }
+
+  .bio-header h3 {
+    font-family: "lacquer", sans-serif;
+    font-size: 2.5rem;
+    color: rgb(255, 2, 2);
+  }
+
+  .bio-header {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .bio-words p {
+    font-family: "roboto", sans-serif;
+    font-size: 1rem;
+  }
+
+  .bio-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .discography-section h2 {
+    font-family: "lacquer", sans-serif;
+    font-size: 3.75rem;
+    color: rgb(255, 2, 2);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .discography-list {
+    display: flex;
+    margin-top: 3.5rem;;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .album {
+    font-family: "roboto", sans-serif;
+    background-color: #ffffff;
+    border: rgb(179, 173, 173) solid 1px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    flex: 1 1 300px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .album img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .album a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: "roboto", sans-serif;
+    text-align: center;
+    display: block;
+  }
+
+  .album a:hover {
+    transform: scale(1.08);
+    transition: ease-in-out 0.3s;
+  }
+
+  .album p {
+    font-family: "roboto", sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .album h3 {
+    font-family: "roboto", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "roboto", sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    height: 75px;
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  .comment {
+    display: flex;
+    font-family: "roboto", sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  #comments {
+    padding: 2rem;
+  }
+
+  .discussion-comments {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .discussion-section h2 {
+    font-family: "lacquer", sans-serif;
+    font-size: 4rem;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .discussion-section h3 {
+    font-family: "lacquer", sans-serif;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  #comments {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* responsive */
+    gap: 20px;
+  }
+
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .comment {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #888;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: grid;
+  }
+
+  .comment-author {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-family: "roboto", sans-serif;
+  }
+
+  .comment-text {
+    font-size: 1rem;
+    font-family: "roboto", sans-serif;
+  }
+
+    .discussion-section button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: 300px;
+    text-align: center;
+    margin: 30px auto 0;
+    margin-bottom: 50px;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: "roboto", sans-serif;
+  }
